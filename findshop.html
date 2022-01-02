@@ -2,20 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="The homepagepage of Conscious Coffee, a coffee shop for people who want organic and fairtrade coffee">
+        <meta name="description" content="Find a Conscious Coffee shop near you">
         <meta name="viewport" content="width=device-width, initial scale=1">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <title>Conscious Coffee | Home</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <title>Conscious Coffee | Find your shop</title>
     </head>
     <body>
         <header>
-            <a href="index.html"><img src="images/logo_dark-brown.png" alt="logo of conscious coffee"></a>
-            <a href="index.html">Conscious Coffee</a>
+            <a href="index.html"><img src="images/logo_dark-brown.png" alt="logo of conscious coffee" class="logo-image"></a>
+            <a href="index.html" class="logo">Conscious Coffee</a>
             <nav>
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About us</a></li>
                     <li><a href="contact.html">Contact us</a></li>
-                    <li><a href="findshop.html">Find your shop</a></li>
+                    <li><a href="findshop.html" class="current">Find your shop</a></li>
                     <li><a href="locations.html">Locations</a></li>
                 </ul>
             </nav>
@@ -26,9 +28,10 @@
                <h1>Find your shop</h1>
                <p>We have more than 15 shops all across Norway. Click the map and find your nearest one</p>
            </section>
-           <section>
-               <h2>List of locations</h2>
-               <ul>
+           <section class="loc">
+               <div>
+                <h2>List of locations</h2>
+                <ul> 
                    <li>Bergen</li>
                    <li>Oslo</li>
                    <li>Trondheim</li>
@@ -44,7 +47,11 @@
                    <li>Trondheim</li>
                    <li>Stavanger</li>
                    <li>Aalesund</li>
-               </ul>
+               </ul> 
+               </div>
+           </section>
+           <section class="loc">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126133.55226055214!2d5.330510598994912!3d60.39837406859229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfc1d80be31e1%3A0xf278657d7d75232e!2sBryggen!5e0!3m2!1sno!2sno!4v1641161628893!5m2!1sno!2sno" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
            </section>
         </main>
         <footer>

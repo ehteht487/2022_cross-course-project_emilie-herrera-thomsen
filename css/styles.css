@@ -1,0 +1,229 @@
+@font-face {
+  src: url(../fonts/Afrah-Regular.ttf) format(ttf);
+  font-family: Afrah;
+}
+
+@font-face {
+  src: url(../fonts/Playlist Script.otf) format(otf);
+  font-family: Playlist Script;
+}
+
+body {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #595959;
+}
+
+h1,
+h2 {
+  font-family: Afrah, Georgia, "Times New Roman", Times, serif;
+  color: #402313;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.logo {
+  font-family: Playlist Script;
+  font-size: 2.5rem;
+  margin-left: 15px;
+}
+
+.logo-image {
+  max-width: 80px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 5px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin-left: 100px;
+  margin-right: 300px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+header a {
+  color: #402313;
+}
+
+.cta {
+  background-color: #734e39;
+  color: #fff;
+  padding-left: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 35px;
+  font-size: 1.2rem;
+}
+
+.third {
+  background: rgba(37, 89, 22, 0.1);
+}
+
+.contact {
+  background: rgba(64, 35, 19, 0.8);
+}
+
+.cta-submit {
+  background-color: #f2d98d;
+  color: #595959;
+  padding-left: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 35px;
+  font-size: 1.2rem;
+}
+
+/* Homepage */
+
+.hero {
+  background-image: url(../images/header.jpg);
+  min-height: 70vh;
+  background-size: cover;
+  background-position-x: left;
+  background-position-y: bottom;
+  position: relative;
+}
+
+.extra {
+  color: #fff;
+  font-size: 4rem;
+  position: absolute;
+  top: 400px;
+  left: 800px;
+}
+
+.first {
+  background: rgba(242, 217, 141, 0.4);
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 200px;
+  padding-bottom: 50px;
+  padding-right: 200px;
+}
+
+.first-content {
+  margin-bottom: 60px;
+}
+
+.second {
+  max-width: 100%;
+  margin: 50px, auto;
+  display: flex;
+  flex: 1;
+}
+
+.second-content {
+  border: #a68072;
+  border-width: 3px;
+}
+
+.second-content-image {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.third {
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+}
+
+.third-content {
+  max-width: 50%;
+}
+
+.h2-content {
+  padding-left: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.h2-paragraph {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 2rem;
+}
+
+/* Contact */
+
+.contact-text {
+  color: #fff;
+}
+
+.footerlogo {
+  text-align: center;
+  color: #402313;
+  font-size: 3rem;
+}
+
+/* about */
+
+.firstabout {
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+}
+
+.about1 {
+  max-width: 40%;
+}
+
+.about2 {
+  max-width: 60%;
+}
+
+/* findshop */
+
+.loc {
+  display: inline-flex;
+  max-width: 100%;
+  flex: 1, 2;
+  justify-content: space-between;
+}
+
+.contactcopy {
+  display: inline-flex;
+  position: relative;
+  top: 50px;
+}
+
+.barrista {
+  max-width: 100%;
+}
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-right: 4rem;
+}
