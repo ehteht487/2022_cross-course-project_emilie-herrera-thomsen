@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="The homepagepage of Conscious Coffee, a coffee shop for people who want organic and fairtrade coffee">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <title>Conscious Coffee | Home</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="images/logo_dark-brown.png" alt="logo of conscious coffee"></a>
+            <a href="index.html">Conscious Coffee</a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="findshop.html">Find your shop</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                </ul>
+            </nav>
+            <a href="findshop.html"><i class="fas fa-map-marker-alt"></i></a>
+        </header>    
+        <main>
+            <section>
+                <div>
+                    <h1>Contact us</h1>
+                    <p>Feel free to contact us if you have any questions about our different locations, our coffee, or if you want to apply for a job in one of our shops.</p>
+                </div>
+                <div>
+                    <form action="submit.php" method="POST">
+                        <fieldset>
+                            <legend>Do you have any questions?</legend>
+                            <label for="email">Your email</label>
+                            <input type="text" name="email" id="email">
+                            <label for="name">Your name</label>
+                            <input type="text" name="name" id="name">
+                            <label for="surname">Your surname</label>
+                            <input type="text" name="surname" id="surname">
+                            <label for="cities">Pick a city</label>
+                            <select name="cities" id="cities">
+                                <option value="Bergen">Bergen</option>
+                                <option value="Oslo">Oslo</option>
+                                <option value="Trondheim">Trondheim</option>
+                                <option value="Stavanger">Stavanger</option>
+                                <option value="Aalesund">Aalesund</option>
+                            </select>
+                            <lable for="message">Your message</lable>
+                            <textarea id="message" name="message"></textarea>
+                            <input type="submit" value="Send message">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            Copyright &copy;
+            <div>
+                <h3>Contact</h3>
+                <p>Email: coffee.coffee@mail.com Telephone: 555 555 555</p>
+            </div>
+            <div>
+                <h3>Opening hours</h3>
+                <p>Monday-Thursday 09-21 Friday-Sunday 12-22</p>
+            </div>
+        </footer>
+    </body>
+</html>
