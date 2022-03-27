@@ -22,24 +22,29 @@
                 </ul>
             </nav>
             <a href="findshop.html"><i class="fas fa-map-marker-alt"></i></a>
-        </header>    
+        </header>     
         <main>
-            <img src="images/barrista_girl.jpg" alt="picture of a barrista girl" class="barrista">
-            <section class="contact contactcopy">
-                <div class="contact-text">
-                    <h1 class="contact-text">Contact us</h1>
-                    <p>Feel free to contact us if you have any questions about our different locations, our coffee, or if you want to apply for a job in one of our shops.</p>
-                </div>
-                <div class="contactcopy">
-                    <form action="submit.php" method="POST">
-                        <fieldset>
+            <section class="contact-img"></section>
+            <!-- <img src="images/barrista_girl.jpg" alt="picture of a barrista girl" class="barrista"> -->
+            <div class="hello">
+                <section class="contact-container">
+                    <div class="contact-content">
+                        <h1 class="contact-h1">Contact us</h1>
+                        <p>Feel free to contact us if you have any questions about our different locations, our coffee, or if you want to apply for a job in one of our shops.</p>                    
+                    </div>
+                    <div class="contact-form">
+                        <form action="submit.php" method="POST">
                             <legend class="contact-text">Do you have any questions?</legend>
+    
                             <label for="email" class="contact-text">Your email</label>
-                            <input type="text" name="email" id="email">
+                            <input type="text" name="email" id="email" class="contact-input">
+    
                             <label for="name" class="contact-text">Your name</label>
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" class="contact-input">
+    
                             <label for="surname" class="contact-text">Your surname</label>
-                            <input type="text" name="surname" id="surname">
+                            <input type="text" name="surname" id="surname" class="contact-input">
+    
                             <label for="cities" class="contact-text">Pick a city</label>
                             <select name="cities" id="cities">
                                 <option value="Bergen">Bergen</option>
@@ -48,24 +53,35 @@
                                 <option value="Stavanger">Stavanger</option>
                                 <option value="Aalesund">Aalesund</option>
                             </select>
+    
                             <lable for="message" class="contact-text">Your message</lable>
-                            <textarea id="message" name="message"></textarea>
+                            <textarea id="message" name="message" class="contact-textarea"></textarea>
+    
                             <input type="submit" value="Send message" class="cta-submit">
-                        </fieldset>
-                    </form>
-                </div>
-            </section>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="hide">hello</div>
         </main>
-        <footer>
-            Copyright &copy;
-            <div>
-                <h3>Contact</h3>
-                <p>Email: coffee.coffee@mail.com Telephone: 555 555 555</p>
-            </div>
-            <div>
-                <h3>Opening hours</h3>
-                <p>Monday-Thursday 09-21 Friday-Sunday 12-22</p>
-            </div>
-        </footer>
+        <footer class="footer-hero">           
+            <div class="footer-content">
+               Copyright &copy; of Conscious Coffee
+           </div>
+           <div class="footer-content">
+               <h3>Contact</h3>
+               <ul>
+                   <li>Email: coffee.coffee@mail.com</li>
+                   <li>Telephone: 555 555 555</li>
+               </ul>
+           </div>
+           <div class="footer-content">
+               <h3>Opening hours</h3>
+               <ul>
+                   <li>Monday-Thursday 09-21</li>
+                   <li>Friday-Sunday 12-22</li>
+               </ul>
+           </div>
+       </footer>
     </body>
 </html>

@@ -11,6 +11,7 @@
 body {
   font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
   color: #595959;
+  margin: 0;
 }
 
 h1,
@@ -22,32 +23,13 @@ h2 {
 
 h1 {
   font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
 }
 
 h2 {
   font-size: 1.5rem;
-}
-
-.logo {
-  font-family: Playlist Script;
-  font-size: 2.5rem;
-  margin-left: 15px;
-}
-
-.logo-image {
-  max-width: 80px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-nav li {
-  display: inline-block;
-  margin: 5px;
-}
-
-nav ul {
-  padding: 0px;
 }
 
 header {
@@ -55,9 +37,34 @@ header {
   align-items: center;
 }
 
+.logo {
+  font-family: Playlist Script;
+  font-size: 2.5rem;
+  margin-left: 0px;
+  
+}
+
+.logo-image {
+  max-width: 80px;
+  padding: 10px 30px;
+}
+
+.fas {
+  padding-right: 30px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
 nav {
-  margin-left: 100px;
-  margin-right: 300px;
+  margin: auto;
+  
 }
 
 a {
@@ -82,15 +89,11 @@ header a {
   font-size: 1.2rem;
 }
 
-.third {
-  background: rgba(37, 89, 22, 0.1);
-}
-
-.contact {
+/* .contact {
   background: rgba(64, 35, 19, 0.8);
-}
+} */
 
-.cta-submit {
+/* .cta-submit {
   background-color: #f2d98d;
   color: #595959;
   padding-left: 35px;
@@ -98,13 +101,13 @@ header a {
   padding-bottom: 15px;
   padding-right: 35px;
   font-size: 1.2rem;
-}
+} */
 
 /* Homepage */
 
 .hero {
   background-image: url(../images/header.jpg);
-  min-height: 70vh;
+  min-height: 90vh;
   background-size: cover;
   background-position-x: left;
   background-position-y: bottom;
@@ -115,66 +118,68 @@ header a {
   color: #fff;
   font-size: 4rem;
   position: absolute;
-  top: 400px;
-  left: 800px;
+  top: 300px;
+  left: 10px;
 }
 
 .first {
-  background: rgba(242, 217, 141, 0.4);
+  background-color: #F2E9CE;
+  padding-bottom: 80px;
+
+}
+
+.first-text {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px;
+}
+
+.first-cta {
   text-align: center;
-  padding-top: 20px;
-  padding-left: 200px;
-  padding-bottom: 50px;
-  padding-right: 200px;
-}
-
-.first-content {
-  margin-bottom: 60px;
-}
-
-.second {
-  max-width: 100%;
-  margin: 50px, auto;
-  display: flex;
-  flex: 1;
 }
 
 .second-content {
-  border: #a68072;
-  border-width: 3px;
+  max-width: 400px;
+  border-style: solid;
+  border-color: #402313;
 }
 
 .second-content-image {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 100%;
+}
+
+.second-heading {
+  text-align: center;
+}
+
+.second-p {
+  padding: 0px 20px;
+}
+
+.second-container {
+  display: flex;
+  max-width: 90%;
+  margin: 40px auto;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .third {
+  background-color: #E9EEE7;
   display: flex;
-  flex: 1;
-  max-width: 100%;
 }
 
 .third-content {
   max-width: 50%;
 }
 
-.h2-content {
-  padding-left: 4rem;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+.third-img {
+  max-width: 100%;
 }
 
-.h2-paragraph {
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-bottom: 2rem;
-}
-
-/* Contact */
-
-.contact-text {
-  color: #fff;
+.third-text {
+  max-width: 70%;
+  margin: 40px auto;
 }
 
 .footerlogo {
@@ -185,45 +190,217 @@ header a {
 
 /* about */
 
-.firstabout {
+.about-hero {
+  background-image: url(../images/hero-1.jpg);
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.about-container {
+  max-width: 1200px;
   display: flex;
-  flex: 1;
+  flex-direction: row-reverse;
+  background-color: #F2E9CE;
+  padding: 4rem;
+}
+
+.about-one {
+  max-width: 90%;
+  margin: 40px auto;
+  
+}
+
+.aimage {
   max-width: 100%;
 }
 
-.about1 {
-  max-width: 40%;
+.about-content {
+  padding-right: 25px;
 }
 
-.about2 {
-  max-width: 60%;
+.about-two {
+  max-width: 90%;
+  margin: 40px auto;
 }
 
-/* findshop */
+.about-container-2 {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  background-color: #E9EEE7;
+  padding: 4rem;
+}
 
-.loc {
-  display: inline-flex;
+.aimage-2 {
+  max-width: 350px;
+}
+
+.about-content-2 {
+  margin: auto;
+  padding-left: 20px;
+}
+
+/* find shop */
+
+.find-hero {
+  background-image: url(../images/hero-3.jpg);
+  min-height: 20vh;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.find-first {
+  max-width: 70%;
+  margin: auto;
+}
+
+.find-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.find-second {
+  line-height: 25px;
+  padding-left: 5px;
+  padding-bottom: 20px;
+}
+
+.find-third {
+  padding: 4rem;
+}
+
+/* locations */
+
+.find-hero {
+  background-image: url(../images/hero-3.jpg);
+  min-height: 20vh;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.location-container {
+  max-width: 70%;
+  margin: 50px auto;
+  display: flex;
+  border-style: solid;
+}
+
+.location-second {
+  padding: 10px;
+  margin: auto
+}
+
+.location-img {
   max-width: 100%;
-  flex: 1, 2;
-  justify-content: space-between;
 }
 
-.contactcopy {
-  display: inline-flex;
+/* Contact */
+
+.contact-img {
+  background-image: url(../images/barrista_girl.jpg);
+  min-height: 120vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
   position: relative;
-  top: 50px;
+  z-index: 1;
 }
 
-.barrista {
-  max-width: 100%;
+.hello {
+  max-width: 80%;
+  background: rgba(64, 35, 19, 0.8);
+  margin: auto;
+  position: absolute;
+  z-index: 2;
+  top: 150px;
+  left: 120px;
 }
+.contact-container {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+form > * {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contact-content {
+  flex: 1;
+  padding: 30px;
+  color: #fff;
+}
+
+.contact-form {
+  flex: 1;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 10px;
+}
+
+.contact-input {
+  width: 250px;
+  padding: 5px;
+}
+
+.contact-text {
+  margin-top: 20px;
+}
+
+.contact-textarea {
+  width: 250px;
+  height: 50px;
+}
+
+.cta-submit {
+  background-color: #f2d98d;
+  color: #595959;
+  padding: 15px 35px;
+  margin: 30px auto;
+  font-size: 1rem;
+}
+
+.contact-h1 {
+  color: #fff;
+}
+
+.hide {
+  padding: 20px;
+  color: #fff;
+}
+
+
+
 /* footer */
 
 footer {
   display: flex;
   justify-content: space-between;
-  padding-left: 4rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  padding-right: 4rem;
+  padding: 4rem;
+  align-items:center;
+  color: #fff;
+}
+
+.footer-hero {
+  background-image: url(../images/footer.jpg);
+  
+  background-size: cover;
+  background-position-x: left;
+  background-position-y: bottom;
+  position: relative;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
 }
