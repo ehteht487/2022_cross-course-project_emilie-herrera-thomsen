@@ -19,13 +19,13 @@
                     <li><a href="contact.html" class="current">Contact us</a></li>
                     <li><a href="findshop.html">Find your shop</a></li>
                     <li><a href="locations.html">Locations</a></li>
+                    <li><a href="Shop.html">Products</a></li>
                 </ul>
             </nav>
             <a href="findshop.html"><i class="fas fa-map-marker-alt"></i></a>
         </header>     
         <main>
             <section class="contact-img"></section>
-            <!-- <img src="images/barrista_girl.jpg" alt="picture of a barrista girl" class="barrista"> -->
             <div class="hello">
                 <section class="contact-container">
                     <div class="contact-content">
@@ -33,17 +33,20 @@
                         <p>Feel free to contact us if you have any questions about our different locations, our coffee, or if you want to apply for a job in one of our shops.</p>                    
                     </div>
                     <div class="contact-form">
-                        <form action="submit.php" method="POST">
+                        <form action="submit.php" method="POST" id="contactForm">
                             <legend class="contact-text">Do you have any questions?</legend>
     
-                            <label for="email" class="contact-text">Your email</label>
-                            <input type="text" name="email" id="email" class="contact-input">
-    
                             <label for="name" class="contact-text">Your name</label>
-                            <input type="text" name="name" id="name" class="contact-input">
+                            <input type="text" name="firstName" id="firstName" class="contact-input">
+                            <div class="errorForm" id="errorFirstName">Enter your first name here</div>
+
+                            <label for="message" class="contact-text">Your message</label>
+                            <textarea name="subject" id="subject"  class="contact-textarea"></textarea>
+                            <div class="errorForm" id="errorSubject">This must be minimum 10 characters</div>
     
-                            <label for="surname" class="contact-text">Your surname</label>
-                            <input type="text" name="surname" id="surname" class="contact-input">
+                            <label for="address" class="contact-text">Your address (minimum length 25 characters)</label>
+                            <input type="text" name="address" id="address" class="contact-input">
+                            <div class="errorForm" id="errorAddress">This must be minimum 25 characters</div>
     
                             <label for="cities" class="contact-text">Pick a city</label>
                             <select name="cities" id="cities">
@@ -53,9 +56,10 @@
                                 <option value="Stavanger">Stavanger</option>
                                 <option value="Aalesund">Aalesund</option>
                             </select>
-    
-                            <lable for="message" class="contact-text">Your message</lable>
-                            <textarea id="message" name="message" class="contact-textarea"></textarea>
+
+                            <label for="email" class="contact-text">Your email (this is required)</label>
+                            <input type="text" name="email" id="email" class="contact-input">
+                            <div class="errorForm" id="errorEmail">This must be a valid email address</div>
     
                             <input type="submit" value="Send message" class="cta-submit">
                         </form>
@@ -83,5 +87,6 @@
                </ul>
            </div>
        </footer>
+       <script src="js/contact.js"></script>
     </body>
 </html>
