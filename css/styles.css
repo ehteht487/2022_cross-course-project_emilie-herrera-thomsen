@@ -511,3 +511,37 @@ ul {
   font-size: 14px;
   margin-top: 5px;
   display: none;
+}
+
+.coffee-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product {
+  padding: 2rem;
+}
+
+.brown {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  color: #402313
+}
+
+.specific {
+  max-width: 400px;
+  display: flex;
+  margin: 5rem auto;
+}
+
+.specific1 {
+  padding: 10px;
+}
+
+
+.pr {
+  max-width: 400px;
+}
