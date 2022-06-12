@@ -1,6 +1,6 @@
 # Cross Course Project
 
-(img)
+![image](https://phenomenal-otter-e0354e.netlify.app/images/cross-course-project_conscious-coffee.png)
 
 Conscious Coffee. 
 The assignment was to create a web site for a brand of coffee called Conscious Coffee.
@@ -34,3 +34,4 @@ If you wish to help me make my project better, please feel free to do so :)
 You can reach me by email: emilie908@gmail.com
 ## Acknoledgments
 - https://fontawesome.com
+- https://netlify.com
